@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surf photo and drone, Mentawai Islands</title>
+<meta name="description" content="Surf photos and drone films from the Mentawai Islands. Book a water or drone session.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://images.unsplash.com https://i.ytimg.com; frame-src https://www.youtube-nocookie.com; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'">
+<link rel="preload" href="assets/fonts/barlow-condensed-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#photos">Skip to photos</a>
+
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="#" data-set="name">[Name]</a>
+    <nav aria-label="Sections">
+      <a href="#photos">Photos</a>
+      <a href="#films">Films</a>
+      <a href="#prices">Prices</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-label="Intro">
+  <img class="hero-img" alt="" data-set-img="hero" fetchpriority="high">
+  <div class="hero-text wrap">
+    <p class="kicker"><span data-set="tagline">Surf photo and drone</span> · <span data-set="location">Mentawai Islands</span></p>
+    <h1 data-set="name">[Name]</h1>
+  </div>
+</section>
+
+<section id="photos" class="block" aria-labelledby="photos-title">
+  <div class="wrap">
+    <h2 id="photos-title">Photos</h2>
+    <p class="sub">Find your session by spot or date and tap a photo to buy it.</p>
+    <div class="filters">
+      <div class="chips" role="group" aria-label="Shot from">
+        <button type="button" class="chip" data-shot="" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-shot="Water" aria-pressed="false">In the water</button>
+        <button type="button" class="chip" data-shot="Drone" aria-pressed="false">Drone</button>
+        <button type="button" class="chip" data-shot="Land" aria-pressed="false">Land</button>
+      </div>
+      <label class="spot-pick"><span class="vh">Spot</span>
+        <select id="spot"><option value="">All spots</option></select>
+      </label>
+    </div>
+  </div>
+  <div class="grid-wrap">
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>No photos from this spot yet.</p>
+    <p class="more-row"><button type="button" class="btn" id="more" hidden>More photos</button></p>
+  </div>
+</section>
+
+<section id="films" class="block" aria-labelledby="films-title">
+  <div class="wrap">
+    <h2 id="films-title">Films</h2>
+    <p class="sub"><a class="link" data-set-href="youtube" href="#">All films on YouTube</a></p>
+    <div class="films" id="films-grid"></div>
+  </div>
+</section>
+
+<section id="prices" class="block" aria-labelledby="prices-title">
+  <div class="wrap">
+    <h2 id="prices-title">Prices</h2>
+    <div class="prices" id="prices-grid"></div>
+    <p class="center"><a class="btn" data-wa="Hi, I'd like to book a session." href="#">Ask about dates</a></p>
+  </div>
+</section>
+
+<section id="about" class="block about" aria-labelledby="about-title">
+  <div class="wrap about-row">
+    <img class="about-img" alt="" data-set-img="about_photo" loading="lazy">
+    <div>
+      <h2 id="about-title">About</h2>
+      <p data-set="about"></p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="block contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <h2 id="contact-title">Contact</h2>
+    <p class="sub" data-set="booking_note"></p>
+    <p class="contact-row">
+      <a class="btn" data-wa="Hi, I'd like to book a session." href="#">WhatsApp</a>
+      <a class="btn btn-line" data-set-href="instagram" href="#">Instagram</a>
+      <a class="btn btn-line" data-set-href="email" href="#">Email</a>
+    </p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> <span data-set="name">[Name]</span></span>
+    <span data-set="location">Mentawai Islands</span>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb" aria-label="Photo viewer">
+  <div class="lb-top">
+    <span class="lb-count" id="lb-count"></span>
+    <button type="button" class="lb-close" id="lb-close">Close</button>
+  </div>
+  <div class="lb-stage">
+    <button type="button" class="lb-nav lb-prev" id="lb-prev" aria-label="Previous photo"><span aria-hidden="true">‹</span></button>
+    <img id="lb-img" alt="">
+    <button type="button" class="lb-nav lb-next" id="lb-next" aria-label="Next photo"><span aria-hidden="true">›</span></button>
+  </div>
+  <div class="lb-bottom">
+    <p class="lb-cap" id="lb-cap"></p>
+    <a class="btn btn-light" id="lb-buy" href="#" target="_blank" rel="noopener">Buy this photo</a>
+  </div>
+</dialog>
+</body>
+</html>

@@ -1,0 +1,127 @@
+# Pages CMS setup: https://pagescms.org
+# She signs in at app.pagescms.org and sees four sections: Sessions, Films, Prices and Site.
+
+media:
+  input: media
+  output: media
+
+content:
+  - name: sessions
+    label: Photo sessions
+    type: file
+    path: content/sessions.json
+    format: json
+    list: true
+    fields:
+      - name: date
+        label: Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: spot
+        label: Spot
+        type: string
+        required: true
+        description: "Macaronis, Lance's Right, Rifles. Spell it the same each time since the site groups photos by it."
+      - name: shot
+        label: Shot from
+        type: select
+        options:
+          values: [Water, Drone, Land]
+      - name: surfers
+        label: Surfers
+        type: string
+        description: Optional. Shown under each photo.
+      - name: photos
+        label: Photos
+        type: image
+        options:
+          multiple:
+            max: 200
+          unique: true
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+
+  - name: videos
+    label: Films
+    type: file
+    path: content/videos.json
+    format: json
+    list: true
+    fields:
+      - name: url
+        label: YouTube link
+        type: string
+        required: true
+        description: Paste the link from YouTube's Share button. Shorts links show as tall videos.
+      - name: title
+        label: Title
+        type: string
+      - name: spot
+        label: Spot
+        type: string
+      - name: date
+        label: Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+
+  - name: packages
+    label: Prices
+    type: file
+    path: content/packages.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Package
+        type: string
+      - name: price
+        label: Price
+        type: string
+        description: "Example: 1,500,000 IDR"
+      - name: details
+        label: Details
+        type: text
+        description: One line per item.
+
+  - name: settings
+    label: Site
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - name: name
+        label: Name
+        type: string
+      - name: tagline
+        label: Line above the name
+        type: string
+      - name: location
+        label: Location
+        type: string
+      - name: hero
+        label: Top photo
+        type: image
+      - name: about_photo
+        label: About photo
+        type: image
+      - name: about
+        label: About
+        type: text
+      - name: booking_note
+        label: Contact note
+        type: text
+      - name: whatsapp
+        label: WhatsApp number
+        type: string
+        description: "Country code and number, no spaces. Example: 6281234567890"
+      - name: instagram
+        label: Instagram handle
+        type: string
+      - name: youtube
+        label: YouTube channel link
+        type: string
+      - name: email
+        label: Email
+        type: string

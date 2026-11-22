@@ -1,0 +1,13 @@
+{
+  "name": "[Name]",
+  "tagline": "Surf photo and drone",
+  "location": "Mentawai Islands",
+  "hero": "https://images.unsplash.com/photo-1689770429997-35c9135a52b1",
+  "about_photo": "https://images.unsplash.com/photo-1591688720837-ebf862ab06e6",
+  "about": "[Two or three sentences: where she is based, how long she has shot surf, and what she shoots from: water housing, drone or boat.]",
+  "whatsapp": "[WhatsApp number with country code, for example 6281234567890]",
+  "instagram": "[instagram handle]",
+  "youtube": "https://www.youtube.com/@[channel]",
+  "email": "[email address]",
+  "booking_note": "Send your dates, your boat or camp, and whether you want photos, drone or both."
+}

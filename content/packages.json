@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Water session",
+    "price": "[Price] IDR",
+    "details": "1 to 2 hours in the water with a housing\n[Number] edited photos"
+  },
+  {
+    "name": "Drone session",
+    "price": "[Price] IDR",
+    "details": "Up to [number] minutes of flight\n30 to 60 second edited clip\n[Number] stills from the air"
+  },
+  {
+    "name": "Water and drone",
+    "price": "[Price] IDR",
+    "details": "Both cameras on the same session\nEdited clip and photos"
+  },
+  {
+    "name": "Boat trip",
+    "price": "Price on request",
+    "details": "Ride along on your charter\nPrice per day"
+  }
+]

@@ -1,5 +1,11 @@
 [
   {
+    "name": "Island Life",
+    "description": "Local life, boats, villages and people.",
+    "cover": "media/WhatsApp Image 2026-11-22 at 10.52.10 PM (4).jpeg",
+    "hidden": false
+  },
+  {
     "name": "Surf Sessions",
     "description": "Surfers in action, rides and barrels.",
     "cover": "media/IMG_4275.jpg",
@@ -15,12 +21,6 @@
     "name": "Aerial",
     "description": "Drone shots of surf breaks, islands, reefs and boats.",
     "cover": "media/WhatsApp Image 2026-11-22 at 10.52.09 PM (5).jpeg",
-    "hidden": false
-  },
-  {
-    "name": "Island Life",
-    "description": "Local life, boats, villages and people.",
-    "cover": "media/WhatsApp Image 2026-11-22 at 10.52.10 PM (4).jpeg",
     "hidden": false
   },
   {

@@ -148,7 +148,8 @@
       },
       {
         "kind": "Enquiry form",
-        "heading": "Send an enquiry",
+        "heading": "Got Something in Mind?",
+        "text": "Planning a surf trip to the Mentawais, looking for someone to capture your time in the water, or just have a question? Tell me what you have in mind and let's take it from there.",
         "hidden": false
       }
     ]

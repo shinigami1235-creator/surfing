@@ -5,9 +5,8 @@
     "shot": "Water",
     "surfers": "[Surfer names]",
     "photos": [
-      "https://images.unsplash.com/photo-1579374358521-7b4fa4b276d4",
-      "https://images.unsplash.com/photo-1616141893496-fbc65370493e",
-      "https://images.unsplash.com/photo-1612025344470-df9818c785a4"
+      "media/whatsapp-image-2026-11-22-at-105210-pm-7.jpeg",
+      "media/whatsapp-image-2026-11-22-at-105210-pm-13.jpeg"
     ]
   },
   {
@@ -16,20 +15,16 @@
     "shot": "Water",
     "surfers": "[Surfer names]",
     "photos": [
-      "https://images.unsplash.com/photo-1643345360545-33f40f0e741f",
-      "https://images.unsplash.com/photo-1498330177096-689e3fb901ca",
-      "https://images.unsplash.com/photo-1601505804121-45e2c5506c94"
+      "media/whatsapp-image-2026-11-22-at-105209-pm-7.jpeg"
     ]
   },
   {
     "date": "2026-09-28",
     "spot": "Playgrounds",
-    "shot": "Land",
+    "shot": "Water",
     "surfers": "[Surfer names]",
     "photos": [
-      "https://images.unsplash.com/photo-1632299768491-51d27b80d088",
-      "https://images.unsplash.com/photo-1503022932596-500eb8cca2d8",
-      "https://images.unsplash.com/photo-1756312091461-e4d98815ac88"
+      "media/whatsapp-image-2026-11-22-at-105210-pm-5.jpeg"
     ]
   },
   {
@@ -38,8 +33,7 @@
     "shot": "Drone",
     "surfers": "[Surfer names]",
     "photos": [
-      "https://images.unsplash.com/photo-1556762019-657ac042d6b5",
-      "https://images.unsplash.com/photo-1527731149372-fae504a1185f"
+      "media/whatsapp-image-2026-11-22-at-105209-pm-5.jpeg"
     ]
   },
   {
@@ -48,9 +42,7 @@
     "shot": "Water",
     "surfers": "[Surfer names]",
     "photos": [
-      "https://images.unsplash.com/photo-1504682066999-90437076f0dd",
-      "https://images.unsplash.com/photo-1688263638792-2ede6002db03",
-      "https://images.unsplash.com/photo-1688263638788-fa120d93bbc3"
+      "media/whatsapp-image-2026-11-22-at-105210-pm-14.jpeg"
     ]
   },
   {
@@ -59,9 +51,7 @@
     "shot": "Drone",
     "surfers": "[Surfer names]",
     "photos": [
-      "https://images.unsplash.com/photo-1559627755-42212e5c5fdf",
-      "https://images.unsplash.com/photo-1541617219835-3689726fa8e7",
-      "https://images.unsplash.com/photo-1496693623174-5f1de03f1b91"
+      "media/whatsapp-image-2026-11-22-at-105209-pm-5-1.jpeg"
     ]
   },
   {
@@ -70,10 +60,7 @@
     "shot": "Water",
     "surfers": "[Surfer names]",
     "photos": [
-      "https://images.unsplash.com/photo-1771120902860-9cdfd221d564",
-      "https://images.unsplash.com/photo-1771120903092-e93d9e1f18fe",
-      "https://images.unsplash.com/photo-1771120902856-e80aa4ae7b69",
-      "https://images.unsplash.com/photo-1771120902853-c8558ff27f2b"
+      "media/whatsapp-image-2026-11-22-at-105210-pm.jpeg"
     ]
   }
 ]

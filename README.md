@@ -27,7 +27,7 @@ A collection or spot name that doesn't match shows as a warning at the top of th
 
 ### Pages and sections
 
-A page is a list of sections shown in order. Drag sections to reorder them. Each section has a type:
+A page is a list of sections shown in order. Drag sections to reorder them. The **Text** box in each section has a toolbar for bold, italic, headings, lists, quotes and links. Each section has a type:
 
 | Section type | Uses |
 |---|---|

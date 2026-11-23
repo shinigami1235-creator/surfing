@@ -214,3 +214,23 @@ h1.sec-title{font-size:clamp(42px,6vw,72px)}
   .tag-title{font-size:16px}
   .tag-sub{font-size:12px}
 }
+
+/* formatted text from the CMS editor */
+.rich>:first-child{margin-top:0}
+.rich>:last-child{margin-bottom:0}
+.rich p{margin:0 0 14px}
+.rich strong{font-weight:600}
+.rich a{color:var(--ink);text-underline-offset:3px}
+.rich h2,.rich h3,.rich h4{margin:28px 0 10px;line-height:1.1}
+.rich h2{font-size:30px}
+.rich h3{font-size:24px}
+.rich h4{font-size:19px;letter-spacing:.06em}
+.rich ul,.rich ol{margin:0 0 14px;padding-left:22px}
+.rich li{margin:4px 0}
+.rich blockquote{margin:18px 0;padding:2px 0 2px 18px;border-left:2px solid var(--ink);font-size:1.08em}
+.rich hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+.rich img{margin:18px 0;width:100%;height:auto}
+.text:not(.split) .rich ul,.text:not(.split) .rich ol,.sub ul,.sub ol{display:inline-block;text-align:left}
+.text .text-body .rich p{font-size:18px;margin:0 0 18px}
+.sub.rich{color:var(--muted)}
+.text-body .sec-title+.rich{margin-top:18px}

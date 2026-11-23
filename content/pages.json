@@ -9,13 +9,13 @@
       {
         "kind": "Collections",
         "heading": "The Photo Collection",
-        "text": "Surf, ocean and island photography from the Mentawai Islands.",
+        "text": "<p>Surf, ocean and island photography from the Mentawai Islands.</p>",
         "hidden": false
       },
       {
         "kind": "Text",
         "heading": "Boat Charters",
-        "text": "[Two sentences about the charter: the boat, where it goes and who it suits.]",
+        "text": "<p>[Two sentences about the charter: the boat, where it goes and who it suits.]</p>",
         "items": [
           "See the charters | charters"
         ],
@@ -29,7 +29,7 @@
       {
         "kind": "Contact",
         "heading": "Contact",
-        "text": "Send your dates, your boat or camp, and whether you want photos, drone or both.",
+        "text": "<p>Send your dates, your boat or camp, and whether you want photos, drone or both.</p>",
         "hidden": false
       }
     ]
@@ -44,14 +44,14 @@
       {
         "kind": "Text",
         "heading": "Sibon Charters",
-        "text": "Explore the Mentawai Islands aboard Sibon Charters, a fleet of three vessels designed for unforgettable surf adventures.\n\nFrom the luxury and privacy of Sibon Jaya to the comfort and value of Sibon Baru and the spacious, relaxed atmosphere of Sibon Laut, each boat offers its own way to experience the Mentawais.\n\nFind the perfect boat for your next surf trip.",
+        "text": "<p>Explore the Mentawai Islands aboard Sibon Charters, a fleet of three vessels designed for unforgettable surf adventures.</p><p>From the luxury and privacy of Sibon Jaya to the comfort and value of Sibon Baru and the spacious, relaxed atmosphere of Sibon Laut, each boat offers its own way to experience the Mentawais.</p><p>Find the perfect boat for your next surf trip.</p>",
         "image": "media/Untitled design (17)-1.png",
         "hidden": false
       },
       {
         "kind": "Text",
         "heading": "Sibon Jaya",
-        "text": "**Luxury, privacy, and comfort on the water.**\n\nSibon Jaya is a 70-foot aluminum power catamaran built in 2015 exclusively for surf trips in Indonesia.\n\nDesigned by Australian boatbuilder Robert Wilson, it features four private suites with en-suite bathrooms, air-conditioned living spaces, sound-insulated cabins, and spacious indoor and outdoor lounges.\n\nWith a cruising speed of up to 13 knots, Sibon Jaya combines comfort and performance for exploring the Mentawai Islands.",
+        "text": "<p><strong>Luxury, privacy, and comfort on the water.</strong></p><p>Sibon Jaya is a 70-foot aluminum power catamaran built in 2015 exclusively for surf trips in Indonesia.</p><p>Designed by Australian boatbuilder Robert Wilson, it features four private suites with en-suite bathrooms, air-conditioned living spaces, sound-insulated cabins, and spacious indoor and outdoor lounges.</p><p>With a cruising speed of up to 13 knots, Sibon Jaya combines comfort and performance for exploring the Mentawai Islands.</p>",
         "image": "media/jaya-13.webp",
         "photos": [
           "media/sibonjaya-1.jpg"
@@ -64,7 +64,7 @@
       {
         "kind": "Text",
         "heading": "Sibon Baru",
-        "text": "**Comfort meets adventure.**\n\nSibon Baru is a 62-foot aluminum power catamaran purpose-built for surf trips in the Mentawai Islands.\n\nOffering a balance of comfort, performance, and affordability, the boat features four cabins, three shared bathrooms, air-conditioned interiors, and spacious dining and lounge areas.\n\nWith a cruising speed of up to 13 knots, Sibon Baru is an excellent choice for surfers looking for a comfortable, surf-focused adventure.",
+        "text": "<p><strong>Comfort meets adventure.</strong></p><p>Sibon Baru is a 62-foot aluminum power catamaran purpose-built for surf trips in the Mentawai Islands.</p><p>Offering a balance of comfort, performance, and affordability, the boat features four cabins, three shared bathrooms, air-conditioned interiors, and spacious dining and lounge areas.</p><p>With a cruising speed of up to 13 knots, Sibon Baru is an excellent choice for surfers looking for a comfortable, surf-focused adventure.</p>",
         "image": "media/baru space.jpeg",
         "photos": [
           "media/sibonbaru-1.jpg"
@@ -74,7 +74,7 @@
       {
         "kind": "Text",
         "heading": "Sibon Laut",
-        "text": "**Space to explore.**\n\nSibon Laut is a 70-foot steel power monohull originally built in Fremantle, Australia, and converted into a surf charter in 2015.\n\nFeaturing eight air-conditioned cabins, comfortable shared accommodation, spacious indoor lounges, and generous outdoor deck areas, Sibon Laut offers a relaxed atmosphere for exploring the Mentawais.\n\nWith shaded seating, outdoor dining, and plenty of space to unwind, it's a welcoming base for a group surf adventure.",
+        "text": "<p><strong>Space to explore.</strong></p><p>Sibon Laut is a 70-foot steel power monohull originally built in Fremantle, Australia, and converted into a surf charter in 2015.</p><p>Featuring eight air-conditioned cabins, comfortable shared accommodation, spacious indoor lounges, and generous outdoor deck areas, Sibon Laut offers a relaxed atmosphere for exploring the Mentawais.</p><p>With shaded seating, outdoor dining, and plenty of space to unwind, it&#x27;s a welcoming base for a group surf adventure.</p>",
         "image": "media/laut-07.webp",
         "photos": [
           "media/sibonlaut-1.jpg"
@@ -84,19 +84,19 @@
       {
         "kind": "Text",
         "heading": "What's Included",
-        "text": "Your Sibon Charters adventure includes 11 nights and 10 days of boat trip, airport transfers, three gourmet meals daily, snacks, and a selection of drinks.\n\nEnjoy access to onboard entertainment, snorkeling equipment, stand-up paddleboards, fishing gear, and a dinghy for surfing and shore exploration. Kayaks are also available aboard Sibon Jaya.\n\nProfessional photography and filming services are available, with optional image packages purchased separately.",
+        "text": "<p>Your Sibon Charters adventure includes 11 nights and 10 days of boat trip, airport transfers, three gourmet meals daily, snacks, and a selection of drinks.</p><p>Enjoy access to onboard entertainment, snorkeling equipment, stand-up paddleboards, fishing gear, and a dinghy for surfing and shore exploration. Kayaks are also available aboard Sibon Jaya.</p><p>Professional photography and filming services are available, with optional image packages purchased separately.</p>",
         "hidden": false
       },
       {
         "kind": "Text",
         "heading": "Booking information",
-        "text": "Individual and private charter enquiries are welcome.\n\nTo secure a booking, a deposit of USD 600 per person is required for Sibon Baru and Sibon Laut, or USD 1,000 per person for Sibon Jaya.\n\nDeposits are required within 10 days of the reservation request, and the remaining balance must be paid at least 60 days before departure.\n\nIndividual trips normally require a minimum of eight guests to proceed. Private charters have no minimum guest requirement.\n\nPlease contact us for available dates, charter pricing, and full booking and cancellation conditions.",
+        "text": "<p>Individual and private charter enquiries are welcome.</p><p>To secure a booking, a deposit of USD 600 per person is required for Sibon Baru and Sibon Laut, or USD 1,000 per person for Sibon Jaya.</p><p>Deposits are required within 10 days of the reservation request, and the remaining balance must be paid at least 60 days before departure.</p><p>Individual trips normally require a minimum of eight guests to proceed. Private charters have no minimum guest requirement.</p><p>Please contact us for available dates, charter pricing, and full booking and cancellation conditions.</p>",
         "hidden": false
       },
       {
         "kind": "Text",
         "heading": "Plan Your Mentawai Surf Trip",
-        "text": "Ready to explore the Mentawai Islands?\n\nWhether you're traveling solo, with friends, or planning a private group charter, get in touch to explore the available boats and departure dates.\n\nTell us your preferred travel dates, group size, and the kind of surf experience you're looking for.\n\n**Enquire about your next charter with KUYA RICK.**",
+        "text": "<p>Ready to explore the Mentawai Islands?</p><p>Whether you&#x27;re traveling solo, with friends, or planning a private group charter, get in touch to explore the available boats and departure dates.</p><p>Tell us your preferred travel dates, group size, and the kind of surf experience you&#x27;re looking for.</p><p><strong>Enquire about your next charter with KUYA RICK.</strong></p>",
         "hidden": false
       }
     ]
@@ -110,7 +110,7 @@
       {
         "kind": "Collections",
         "heading": "The Photo Collection",
-        "text": "Surf, ocean and island photography from the Mentawai Islands.",
+        "text": "<p>Surf, ocean and island photography from the Mentawai Islands.</p>",
         "hidden": false
       }
     ]
@@ -123,7 +123,7 @@
       {
         "kind": "Text",
         "heading": "About",
-        "text": "Somewhere between chasing waves and exploring the islands, Ricky found another way to experience the ocean — through photography.\n\nFrom perfect barrels and turquoise waters to golden sunsets and the untouched beauty of the Mentawais, his photographs are a reflection of the places, people, and moments that inspire him.\n\nNo two waves are ever the same",
+        "text": "<p>Somewhere between chasing waves and exploring the islands, Ricky found another way to experience the ocean — through photography.</p><p>From perfect barrels and turquoise waters to golden sunsets and the untouched beauty of the Mentawais, his photographs are a reflection of the places, people, and moments that inspire him.</p><p>No two waves are ever the same</p>",
         "image": "media/IMG_2587 2.jpeg",
         "hidden": false
       }
@@ -137,7 +137,7 @@
       {
         "kind": "Contact",
         "heading": "Contact",
-        "text": "Send your dates, your boat or camp, and whether you want photos, drone or both.",
+        "text": "<p>Send your dates, your boat or camp, and whether you want photos, drone or both.</p>",
         "hidden": false
       },
       {

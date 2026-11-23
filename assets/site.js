@@ -87,6 +87,69 @@
     return a;
   }
 
+
+  /* ---------- formatted text ----------
+     Text fields come from the CMS editor as HTML. Older plain text still works,
+     with **bold**, *italic*, - lists, ## headings and [links](https://...).
+     Only the tags and links below are kept, so nothing typed in the CMS can run code. */
+  const KEEP = new Set(['P', 'BR', 'STRONG', 'B', 'EM', 'I', 'U', 'S', 'H2', 'H3', 'H4', 'UL', 'OL', 'LI', 'BLOCKQUOTE', 'A', 'HR', 'IMG']);
+  const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  function inlineMd(t) {
+    return esc(t)
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/__(.+?)__/g, '<strong>$1</strong>')
+      .replace(/(^|[^*])\*(?!\s)(.+?)\*(?!\*)/g, '$1<em>$2</em>')
+      .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>');
+  }
+  function mdToHtml(text) {
+    return String(text).replace(/\r/g, '').split(/\n{2,}/).map((block) => {
+      const rows = block.split('\n').filter((r) => r.trim());
+      if (!rows.length) return '';
+      if (rows.every((r) => /^\s*[-*•]\s+/.test(r))) return `<ul>${rows.map((r) => `<li>${inlineMd(r.replace(/^\s*[-*•]\s+/, ''))}</li>`).join('')}</ul>`;
+      if (rows.every((r) => /^\s*\d+[.)]\s+/.test(r))) return `<ol>${rows.map((r) => `<li>${inlineMd(r.replace(/^\s*\d+[.)]\s+/, ''))}</li>`).join('')}</ol>`;
+      const h = rows[0].match(/^(#{2,4})\s+(.*)$/);
+      if (h && rows.length === 1) return `<h${Math.min(h[1].length + 1, 4)}>${inlineMd(h[2])}</h${Math.min(h[1].length + 1, 4)}>`;
+      return `<p>${rows.map(inlineMd).join('<br>')}</p>`;
+    }).join('');
+  }
+  function clean(node, out) {
+    node.childNodes.forEach((n) => {
+      if (n.nodeType === 3) { out.append(document.createTextNode(n.textContent)); return; }
+      if (n.nodeType !== 1) return;
+      const tag = n.tagName;
+      if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'IFRAME') return;
+      if (!KEEP.has(tag)) { clean(n, out); return; }
+      const k = document.createElement(tag === 'B' ? 'strong' : tag === 'I' ? 'em' : tag.toLowerCase());
+      if (tag === 'A') {
+        const href = (n.getAttribute('href') || '').trim();
+        const r = /^(https?:|mailto:|#)/i.test(href) ? { href, external: /^https?:/i.test(href) }
+          : /^[a-z][a-z0-9+.-]*:/i.test(href) ? null : resolveLink(href);
+        if (!r) { clean(n, out); return; }
+        k.href = r.href;
+        if (r.external) { k.target = '_blank'; k.rel = 'noopener'; }
+      }
+      if (tag === 'IMG') {
+        const s2 = (n.getAttribute('src') || '').trim();
+        if (!/^(https:\/\/|media\/|\/?media\/)/i.test(s2)) return;
+        k.src = src(s2, 1400);
+        k.alt = n.getAttribute('alt') || '';
+        k.loading = 'lazy';
+      }
+      const align = (n.getAttribute('style') || '').match(/text-align:\s*(left|center|right|justify)/i);
+      if (align) k.style.textAlign = align[1].toLowerCase();
+      clean(n, k);
+      out.append(k);
+    });
+  }
+  function rich(value, cls) {
+    const box = el('div', cls ? `rich ${cls}` : 'rich');
+    const v = String(value || '').trim();
+    if (!v) return box;
+    const html = /<\/?(p|br|strong|em|b|i|u|s|h[1-6]|ul|ol|li|blockquote|a|hr|img|div|span)\b/i.test(v) ? v : mdToHtml(v);
+    clean(new DOMParser().parseFromString(html, 'text/html').body, box);
+    return box;
+  }
+
   /* ---------- data ---------- */
   function buildPhotos(sets) {
     const spotArea = (name) => (spots.find((s) => same(s.name, name)) || {}).area || '';
@@ -343,7 +406,7 @@
     sec.append(wrap);
     return { sec, wrap };
   }
-  const paras = (text, cls) => lines(text).map((t) => el('p', cls, t));
+  const paras = (text, cls) => (String(text || '').trim() ? [rich(text, cls)] : []);
 
   function buttonsRow(items) {
     const row = el('p', 'btn-row');

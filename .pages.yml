@@ -134,8 +134,8 @@ content:
             type: string
           - name: text
             label: Text
-            type: text
-            description: A blank line starts a new paragraph.
+            type: rich-text
+            description: Use the toolbar for bold, italic, headings, lists and links.
           - name: image
             label: Image
             type: image

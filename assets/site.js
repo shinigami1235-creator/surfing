@@ -211,7 +211,19 @@
         grid.append(b);
       });
       more.hidden = list.length <= limit;
+      fit();
     };
+    // when every photo fits in one row, stretch them to the full width
+    const fit = () => {
+      const w = grid.clientWidth;
+      if (!w) return;
+      const row = parseFloat(getComputedStyle(grid).getPropertyValue('--row')) || 260;
+      const gap = parseFloat(getComputedStyle(grid).columnGap) || 0;
+      const shown = list.slice(0, limit);
+      const need = shown.reduce((t, x) => t + ratio(x.p) * row, 0) + gap * (shown.length - 1);
+      grid.classList.toggle('fill', shown.length > 0 && need <= w);
+    };
+    new ResizeObserver(fit).observe(grid);
     more.addEventListener('click', () => {
       const first = limit;
       limit += PAGE;

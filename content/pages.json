@@ -4,26 +4,18 @@
     "slug": "home",
     "description": "Surf photos and drone films from the Mentawai Islands.",
     "hero": "media/WhatsApp Image 2026-11-22 at 10.52.10 PM (11).jpeg",
-    "hero_text": "",
     "hidden": false,
     "sections": [
       {
         "kind": "Collections",
         "heading": "The Photo Collection",
         "text": "Surf, ocean and island photography from the Mentawai Islands.",
-        "image": "",
-        "photos": [],
-        "videos": [],
-        "items": [],
         "hidden": false
       },
       {
         "kind": "Text",
         "heading": "Boat Charters",
         "text": "[Two sentences about the charter: the boat, where it goes and who it suits.]",
-        "image": "https://images.unsplash.com/photo-1594704958523-c90b2af49f87",
-        "photos": [],
-        "videos": [],
         "items": [
           "See the charters | charters"
         ],
@@ -32,21 +24,12 @@
       {
         "kind": "Films",
         "heading": "Films",
-        "text": "",
-        "image": "",
-        "photos": [],
-        "videos": [],
-        "items": [],
         "hidden": false
       },
       {
         "kind": "Contact",
         "heading": "Contact",
         "text": "Send your dates, your boat or camp, and whether you want photos, drone or both.",
-        "image": "",
-        "photos": [],
-        "videos": [],
-        "items": [],
         "hidden": false
       }
     ]
@@ -55,27 +38,30 @@
     "title": "Boat Charters",
     "slug": "charters",
     "description": "Surf charters around the Mentawai Islands.",
-    "hero": "https://images.unsplash.com/photo-1594704958523-c90b2af49f87",
+    "hero": "media/Untitled design (17).png",
     "hero_text": "Surf trips around the Mentawai Islands",
     "hidden": false,
     "sections": [
       {
         "kind": "Text",
-        "heading": "The boat",
-        "text": "[Two or three sentences about the boat, the crew and the kind of trip it runs.]",
-        "image": "",
-        "photos": [],
-        "videos": [],
-        "items": [],
+        "heading": "Meet the Fleet",
+        "text": "Explore the Mentawai Islands aboard Sibon Charters, a fleet of three vessels designed for unforgettable surf adventures.\n\nFrom the luxury and privacy of Sibon Jaya to the comfort and value of Sibon Baru and the spacious, relaxed atmosphere of Sibon Laut, each boat offers its own way to experience the Mentawais.\n\nFind the perfect boat for your next surf trip.",
+        "image": "media/Screenshot 2026-11-23 at 4.30.16 PM.png",
+        "photos": [
+          "media/screenshot-2026-11-23-at-42953-pm.png",
+          "media/screenshot-2026-11-23-at-42926-pm.png"
+        ],
         "hidden": false
       },
       {
-        "kind": "Details",
+        "kind": "Photos and videos",
         "heading": "Charter details",
-        "text": "",
-        "image": "",
-        "photos": [],
-        "videos": [],
+        "text": "test text",
+        "image": "media/Screenshot 2026-11-23 at 1.23.45 PM.png",
+        "photos": [
+          "media/img4286.jpg",
+          "media/img0608-medium.jpeg"
+        ],
         "items": [
           "Boat: [Name]",
           "Length: [number] m",
@@ -89,26 +75,18 @@
       {
         "kind": "Photos and videos",
         "heading": "On board",
-        "text": "",
-        "image": "",
         "photos": [
-          "https://images.unsplash.com/photo-1720059737088-4c8a1c040ee2",
-          "https://images.unsplash.com/photo-1602913017002-1103927ad734",
-          "https://images.unsplash.com/photo-1541064828014-503911d13103"
+          "media/img2711-2.jpeg"
         ],
         "videos": [
           "https://www.youtube.com/watch?v=N16MdO8Ww6s"
         ],
-        "items": [],
         "hidden": false
       },
       {
         "kind": "List",
         "heading": "Trip information",
         "text": "[Trip length, season and which breaks the boat visits.]",
-        "image": "",
-        "photos": [],
-        "videos": [],
         "items": [
           "[Meals on board]",
           "[Surf guide]",
@@ -122,10 +100,6 @@
         "kind": "Enquiry form",
         "heading": "Enquire about a charter",
         "text": "Send your dates and group size and we'll reply on WhatsApp or email.",
-        "image": "",
-        "photos": [],
-        "videos": [],
-        "items": [],
         "hidden": false
       }
     ]
@@ -134,18 +108,12 @@
     "title": "Photos",
     "slug": "photos",
     "description": "Surf, ocean and island photo collections from the Mentawai Islands.",
-    "hero": "",
-    "hero_text": "",
     "hidden": false,
     "sections": [
       {
         "kind": "Collections",
         "heading": "The Photo Collection",
         "text": "Surf, ocean and island photography from the Mentawai Islands.",
-        "image": "",
-        "photos": [],
-        "videos": [],
-        "items": [],
         "hidden": false
       }
     ]
@@ -153,9 +121,6 @@
   {
     "title": "About",
     "slug": "about",
-    "description": "",
-    "hero": "",
-    "hero_text": "",
     "hidden": false,
     "sections": [
       {
@@ -163,9 +128,6 @@
         "heading": "About",
         "text": "Somewhere between chasing waves and exploring the islands, Ricky found another way to experience the ocean — through photography.\n\nFrom perfect barrels and turquoise waters to golden sunsets and the untouched beauty of the Mentawais, his photographs are a reflection of the places, people, and moments that inspire him.\n\nNo two waves are ever the same",
         "image": "media/IMG_2587 2.jpeg",
-        "photos": [],
-        "videos": [],
-        "items": [],
         "hidden": false
       }
     ]
@@ -173,29 +135,17 @@
   {
     "title": "Contact",
     "slug": "contact",
-    "description": "",
-    "hero": "",
-    "hero_text": "",
     "hidden": false,
     "sections": [
       {
         "kind": "Contact",
         "heading": "Contact",
         "text": "Send your dates, your boat or camp, and whether you want photos, drone or both.",
-        "image": "",
-        "photos": [],
-        "videos": [],
-        "items": [],
         "hidden": false
       },
       {
         "kind": "Enquiry form",
         "heading": "Send an enquiry",
-        "text": "",
-        "image": "",
-        "photos": [],
-        "videos": [],
-        "items": [],
         "hidden": false
       }
     ]

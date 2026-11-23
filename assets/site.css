@@ -113,6 +113,11 @@ h1,h2,h3{font-family:var(--cond);font-weight:600;text-transform:uppercase;letter
 .foot{border-top:1px solid var(--line)}
 .foot-row{display:flex;justify-content:space-between;gap:12px;padding-top:22px;padding-bottom:22px;font:500 14px/1.3 var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 
+/* preview mode */
+.preview-bar{position:sticky;top:0;z-index:11;margin:0;padding:9px 20px;background:#e8c547;color:var(--ink);text-align:center;font:500 15px/1.3 var(--cond);letter-spacing:.1em;text-transform:uppercase}
+.preview-bar ~ .top{top:37px}
+.draft{position:absolute;top:8px;left:8px;z-index:1;padding:4px 8px;background:#e8c547;color:var(--ink);font:600 13px/1 var(--cond);letter-spacing:.1em;text-transform:uppercase}
+
 /* lightbox */
 .lb{width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:#0b0b0b;color:#fff;overflow:hidden}
 .lb[open]{display:grid;grid-template-rows:auto 1fr auto}

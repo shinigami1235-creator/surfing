@@ -41,6 +41,10 @@ content:
           unique: true
           extensions: [jpg, jpeg, png, webp]
           rename: safe
+      - name: draft
+        label: Hide from the site
+        type: boolean
+        description: Tick to check it on the preview link first. Untick to publish.
 
   - name: videos
     label: Films
@@ -65,6 +69,10 @@ content:
         type: date
         options:
           format: yyyy-MM-dd
+      - name: draft
+        label: Hide from the site
+        type: boolean
+        description: Tick to check it on the preview link first. Untick to publish.
 
   - name: packages
     label: Prices

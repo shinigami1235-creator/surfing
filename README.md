@@ -10,6 +10,8 @@ A one-page portfolio for a surf photographer in the Mentawai Islands. Photos are
 
 Films work the same way: paste the YouTube link under **Films**. Prices, the WhatsApp number, Instagram and the about text are under **Prices** and **Site**.
 
+To check a session or film before it goes public, tick **Hide from the site**, save, and open the preview link (the site address with `?preview` at the end). Hidden items show there with a yellow Hidden tag. Untick the box and save to publish. Prices and Site changes have no hidden option and go live when saved.
+
 The newest session shows first. Photos are grouped by the spot name, so spell it the same each time.
 
 ## Setup (once)

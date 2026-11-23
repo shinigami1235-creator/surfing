@@ -9,7 +9,9 @@
     if (text != null) n.textContent = text;
     return n;
   };
-  const getJSON = (p) => (window.PREVIEW_DATA ? Promise.resolve(window.PREVIEW_DATA[p] || null) : fetch(p, { cache: 'no-cache' })).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+  const getJSON = (p) => (window.PREVIEW_DATA
+    ? Promise.resolve(window.PREVIEW_DATA[p] || null)
+    : fetch(p, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null));
 
   const fmtDate = (d) => {
     const t = Date.parse(d);
@@ -21,6 +23,10 @@
   };
   const isPlaceholder = (v) => !v || /^\[.*\]$/.test(String(v).trim());
   const safeUrl = (u) => (/^https:\/\//i.test(u) ? u : null);
+
+  // ?preview shows sessions and films ticked "Hide from the site"
+  const PREVIEW = new URLSearchParams(location.search).has('preview');
+  const visible = (x) => PREVIEW || !x.draft;
 
   let sizes = {};
   let settings = {};
@@ -85,11 +91,12 @@
   function flatten(sessions) {
     const list = [];
     sessions
+      .filter(visible)
       .map((s, i) => ({ ...s, i }))
       .sort((a, b) => (Date.parse(b.date) || 0) - (Date.parse(a.date) || 0) || b.i - a.i)
       .forEach((s) => {
         const photos = Array.isArray(s.photos) ? s.photos : [s.photos];
-        photos.filter(Boolean).forEach((p, n) => list.push({ p, n: n + 1, date: s.date, spot: s.spot || '', shot: s.shot || '', surfers: s.surfers || '' }));
+        photos.filter(Boolean).forEach((p, n) => list.push({ p, n: n + 1, date: s.date, spot: s.spot || '', shot: s.shot || '', surfers: s.surfers || '', draft: !!s.draft }));
       });
     return list;
   }
@@ -120,6 +127,7 @@
       }, { once: true });
       img.src = src(x.p, 900);
       b.append(img, el('span', 'tag', `${x.spot} · ${fmtDate(x.date)}`));
+      if (x.draft) b.append(el('span', 'draft', 'Hidden'));
       b.addEventListener('click', () => openLb(i));
       grid.append(b);
     });
@@ -194,6 +202,7 @@
   function renderFilms(videos) {
     const grid = $('#films-grid');
     videos
+      .filter(visible)
       .map((v, i) => ({ ...v, i, id: ytId(v.url) }))
       .filter((v) => v.id)
       .sort((a, b) => (Date.parse(b.date) || 0) - (Date.parse(a.date) || 0) || b.i - a.i)
@@ -219,6 +228,7 @@
           frame.replaceChildren(f);
         });
         frame.append(btn);
+        if (v.draft) frame.append(el('span', 'draft', 'Hidden'));
         const meta = [v.spot, fmtMonth(v.date)].filter(Boolean).join(' · ');
         fig.append(frame, el('h3', null, v.title || ''), el('p', null, meta));
         grid.append(fig);
@@ -247,6 +257,11 @@
     settings = s || {};
     sizes = sz || {};
     applySettings();
+    if (PREVIEW) {
+      document.body.prepend(el('p', 'preview-bar', 'Preview. Items marked Hidden are not on the live site.'));
+      // keep ?preview when moving between sections
+      document.querySelectorAll('a[href^="#"]').forEach((a) => { a.href = `?preview${a.getAttribute('href')}`; });
+    }
     all = flatten(sessions || []);
     fillSpots();
     wireFilters();

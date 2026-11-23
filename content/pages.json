@@ -38,7 +38,7 @@
     "title": "Boat Charters",
     "slug": "charters",
     "description": "Surf charters around the Mentawai Islands.",
-    "hero": "media/Untitled design (17).png",
+    "hero": "media/DJI_0789 Medium-1.jpeg",
     "hero_text": "Surf trips around the Mentawai Islands",
     "hidden": false,
     "sections": [
@@ -46,11 +46,7 @@
         "kind": "Text",
         "heading": "Meet the Fleet",
         "text": "Explore the Mentawai Islands aboard Sibon Charters, a fleet of three vessels designed for unforgettable surf adventures.\n\nFrom the luxury and privacy of Sibon Jaya to the comfort and value of Sibon Baru and the spacious, relaxed atmosphere of Sibon Laut, each boat offers its own way to experience the Mentawais.\n\nFind the perfect boat for your next surf trip.",
-        "image": "media/Screenshot 2026-11-23 at 4.30.16 PM.png",
-        "photos": [
-          "media/screenshot-2026-11-23-at-42953-pm.png",
-          "media/screenshot-2026-11-23-at-42926-pm.png"
-        ],
+        "image": "media/Untitled design (17)-1.png",
         "hidden": false
       },
       {

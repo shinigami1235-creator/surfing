@@ -76,6 +76,12 @@
       return h ? { href: h, external: true } : null;
     }
     if (l.toLowerCase() === 'email') return email() ? { href: `mailto:${email()}` } : null;
+    if (/^@[\w.]+$/.test(l)) return { href: `https://www.instagram.com/${l.slice(1)}/`, external: true };
+    if (l.toLowerCase() === 'instagram') {
+      const ig = String(S.instagram || '').replace(/^@/, '').trim();
+      return isPlaceholder(ig) || !ig ? null : { href: `https://www.instagram.com/${encodeURIComponent(ig)}/`, external: true };
+    }
+    if (/^[\w-]+(\.[\w-]+)+(\/\S*)?$/.test(l) && !/^[\w-]+$/.test(l)) return { href: `https://${l}`, external: true };
     const s = slug(l.replace(/^#/, ''));
     return { href: s === 'home' || s === '' ? '#' : `#${s}`, page: s || 'home' };
   }
@@ -512,6 +518,13 @@
     Contact(s) {
       const { sec, wrap } = sectionShell(s, 'contact center');
       wrap.append(...paras(s.text, 'sub'));
+      // buttons typed under Lines replace the ones built from Site
+      const own = buttonsRow(s.items);
+      if (own) {
+        own.querySelectorAll('.btn').forEach((b, i) => { b.className = i === 0 ? 'btn' : 'btn btn-line'; });
+        wrap.append(own);
+        return sec;
+      }
       const row = el('p', 'btn-row');
       const w = wa('Hi, I found you through your website.');
       if (w) { const a = el('a', 'btn', 'WhatsApp'); a.href = w; a.target = '_blank'; a.rel = 'noopener'; row.append(a); }

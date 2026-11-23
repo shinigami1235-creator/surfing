@@ -157,7 +157,7 @@ content:
             label: Lines
             type: string
             list: true
-            description: "Details: Label: value. List: one item per line. Text and Buttons: Button label | page or link, for example Enquire | contact or Message us | whatsapp."
+            description: "Details: Label: value. List: one item per line. Text, Buttons and Contact: Button label | link, for example Instagram | @thefluidaperture, Message us | whatsapp or Enquire | contact. Contact with no lines uses the WhatsApp, Instagram and email under Site."
           - name: hidden
             label: Hide this section
             type: boolean

@@ -190,7 +190,10 @@
         img.dataset.loading = '';
         img.addEventListener('load', () => {
           delete img.dataset.loading;
-          if (!sizes[x.p] && img.naturalWidth) b.style.setProperty('--r', (img.naturalWidth / img.naturalHeight).toFixed(4));
+          if (!sizes[x.p] && img.naturalWidth) {
+            b.style.setProperty('--r', (img.naturalWidth / img.naturalHeight).toFixed(4));
+            fit();
+          }
         }, { once: true });
         img.src = src(x.p, 900);
         const tag = el('span', 'tag');
@@ -219,9 +222,9 @@
       if (!w) return;
       const row = parseFloat(getComputedStyle(grid).getPropertyValue('--row')) || 260;
       const gap = parseFloat(getComputedStyle(grid).columnGap) || 0;
-      const shown = list.slice(0, limit);
-      const need = shown.reduce((t, x) => t + ratio(x.p) * row, 0) + gap * (shown.length - 1);
-      grid.classList.toggle('fill', shown.length > 0 && need <= w);
+      const tiles = [...grid.children];
+      const need = tiles.reduce((t, c) => t + (parseFloat(c.style.getPropertyValue('--r')) || 1.5) * row, 0) + gap * (tiles.length - 1);
+      grid.classList.toggle('fill', tiles.length > 0 && need <= w);
     };
     new ResizeObserver(fit).observe(grid);
     more.addEventListener('click', () => {

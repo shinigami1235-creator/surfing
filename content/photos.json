@@ -15,8 +15,7 @@
     "date": "2026-09-15",
     "spot": "Bank Vaults",
     "collections": [
-      "Surf Sessions",
-      "Ocean & Waves"
+      "Surf Sessions"
     ],
     "photos": [
       "media/whatsapp-image-2026-11-22-at-105209-pm-7.jpeg"
@@ -27,10 +26,11 @@
     "date": "2026-09-28",
     "spot": "Playgrounds",
     "collections": [
-      "Surf Sessions"
+      "Island Life"
     ],
     "photos": [
-      "media/whatsapp-image-2026-11-22-at-105210-pm-5.jpeg"
+      "media/whatsapp-image-2026-11-22-at-105210-pm-4.jpeg",
+      "media/whatsapp-image-2026-11-22-at-105210-pm-8.jpeg"
     ],
     "draft": false
   },
@@ -80,8 +80,7 @@
     "date": "2026-11-08",
     "spot": "Macaronis",
     "collections": [
-      "Surf Sessions",
-      "Ocean & Waves"
+      "Surf Sessions"
     ],
     "photos": [
       "media/whatsapp-image-2026-11-22-at-105210-pm.jpeg"
@@ -93,6 +92,11 @@
     "spot": "Playgrounds",
     "collections": [
       "Charters"
+    ],
+    "photos": [
+      "media/whatsapp-image-2026-11-22-at-105209-pm-1.jpeg",
+      "media/img2336.jpeg",
+      "media/img2412.jpeg"
     ],
     "draft": false
   }

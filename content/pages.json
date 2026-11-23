@@ -49,54 +49,54 @@
         "hidden": false
       },
       {
-        "kind": "Photos and videos",
-        "heading": "Meet the Fleet",
+        "kind": "Text",
+        "heading": "Sibon Jaya",
+        "text": "**Luxury, privacy, and comfort on the water.**\n\nSibon Jaya is a 70-foot aluminum power catamaran built in 2015 exclusively for surf trips in Indonesia.\n\nDesigned by Australian boatbuilder Robert Wilson, it features four private suites with en-suite bathrooms, air-conditioned living spaces, sound-insulated cabins, and spacious indoor and outdoor lounges.\n\nWith a cruising speed of up to 13 knots, Sibon Jaya combines comfort and performance for exploring the Mentawai Islands.",
+        "image": "media/jaya-13.webp",
         "photos": [
-          "media/sibonlaut.jpg",
-          "media/sibonjaya.jpg",
-          "media/sibonbaru.jpg"
+          "media/sibonjaya-1.jpg"
         ],
         "videos": [
           "https://youtu.be/FIM2-sFuN5M?si=MUgrskaYwxeNDROP"
         ],
-        "items": [
-          "Boat: [Name]",
-          "Length: [number] m",
-          "Cabins: [number]",
-          "Guests: Up to [number]",
-          "Crew: [number]",
-          "Departs from: [Padang or Tuapejat]"
-        ],
         "hidden": false
       },
       {
-        "kind": "Photos and videos",
-        "heading": "On board",
+        "kind": "Text",
+        "heading": "Sibon Baru",
+        "text": "**Comfort meets adventure.**\n\nSibon Baru is a 62-foot aluminum power catamaran purpose-built for surf trips in the Mentawai Islands.\n\nOffering a balance of comfort, performance, and affordability, the boat features four cabins, three shared bathrooms, air-conditioned interiors, and spacious dining and lounge areas.\n\nWith a cruising speed of up to 13 knots, Sibon Baru is an excellent choice for surfers looking for a comfortable, surf-focused adventure.",
+        "image": "media/baru space.jpeg",
         "photos": [
-          "media/img2711-2.jpeg"
-        ],
-        "videos": [
-          "https://www.youtube.com/watch?v=N16MdO8Ww6s"
+          "media/sibonbaru-1.jpg"
         ],
         "hidden": false
       },
       {
-        "kind": "List",
-        "heading": "Trip information",
-        "text": "[Trip length, season and which breaks the boat visits.]",
-        "items": [
-          "[Meals on board]",
-          "[Surf guide]",
-          "[Drinking water]",
-          "[Photos and drone footage of your sessions]",
-          "[Transfers from Padang]"
+        "kind": "Text",
+        "heading": "Sibon Laut",
+        "text": "**Space to explore.**\n\nSibon Laut is a 70-foot steel power monohull originally built in Fremantle, Australia, and converted into a surf charter in 2015.\n\nFeaturing eight air-conditioned cabins, comfortable shared accommodation, spacious indoor lounges, and generous outdoor deck areas, Sibon Laut offers a relaxed atmosphere for exploring the Mentawais.\n\nWith shaded seating, outdoor dining, and plenty of space to unwind, it's a welcoming base for a group surf adventure.",
+        "image": "media/laut-07.webp",
+        "photos": [
+          "media/sibonlaut-1.jpg"
         ],
         "hidden": false
       },
       {
-        "kind": "Enquiry form",
-        "heading": "Enquire about a charter",
-        "text": "Send your dates and group size and we'll reply on WhatsApp or email.",
+        "kind": "Text",
+        "heading": "What's Included",
+        "text": "Your Sibon Charters adventure includes 11 nights and 10 days of boat trip, airport transfers, three gourmet meals daily, snacks, and a selection of drinks.\n\nEnjoy access to onboard entertainment, snorkeling equipment, stand-up paddleboards, fishing gear, and a dinghy for surfing and shore exploration. Kayaks are also available aboard Sibon Jaya.\n\nProfessional photography and filming services are available, with optional image packages purchased separately.",
+        "hidden": false
+      },
+      {
+        "kind": "Details",
+        "heading": "Booking information",
+        "text": "Individual and private charter enquiries are welcome.\n\nTo secure a booking, a deposit of USD 600 per person is required for Sibon Baru and Sibon Laut, or USD 1,000 per person for Sibon Jaya.\n\nDeposits are required within 10 days of the reservation request, and the remaining balance must be paid at least 60 days before departure.\n\nIndividual trips normally require a minimum of eight guests to proceed. Private charters have no minimum guest requirement.\n\nPlease contact us for available dates, charter pricing, and full booking and cancellation conditions.",
+        "hidden": false
+      },
+      {
+        "kind": "Text",
+        "heading": "Plan Your Mentawai Surf Trip",
+        "text": "Ready to explore the Mentawai Islands?\n\nWhether you're traveling solo, with friends, or planning a private group charter, get in touch to explore the available boats and departure dates.\n\nTell us your preferred travel dates, group size, and the kind of surf experience you're looking for.\n\n**Enquire about your next charter with KUYA RICK.**",
         "hidden": false
       }
     ]

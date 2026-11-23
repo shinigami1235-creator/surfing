@@ -118,13 +118,14 @@
   {
     "title": "About",
     "slug": "about",
+    "description": "Ricky Nomad",
     "hidden": false,
     "sections": [
       {
         "kind": "Text",
-        "heading": "About",
+        "heading": "Kuya Rick",
         "text": "<p>Somewhere between chasing waves and exploring the islands, Ricky found another way to experience the ocean — through photography.</p><p>From perfect barrels and turquoise waters to golden sunsets and the untouched beauty of the Mentawais, his photographs are a reflection of the places, people, and moments that inspire him.</p><p>No two waves are ever the same</p>",
-        "image": "media/IMG_2587 2.jpeg",
+        "image": "media/IMG_2315-2.jpeg",
         "hidden": false
       }
     ]

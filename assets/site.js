@@ -394,6 +394,7 @@
 
   /* ---------- sections ---------- */
   let headingLevel = 'h2';
+  let splitCount = 0;
   function sectionShell(s, cls) {
     const sec = el('section', `block ${cls || ''}`.trim());
     const wrap = el('div', 'wrap');
@@ -422,7 +423,9 @@
 
   const SECTIONS = {
     Text(s) {
-      const { sec, wrap } = sectionShell(s, s.image ? 'text split' : 'text');
+      // text sections with a photo alternate: photo left, then photo right
+      const flip = s.image && splitCount++ % 2 === 1;
+      const { sec, wrap } = sectionShell(s, s.image ? `text split${flip ? ' flip' : ''}` : 'text');
       const body = el('div', 'text-body');
       body.append(...paras(s.text));
       const row = buttonsRow(s.items);
@@ -697,6 +700,7 @@
     if (isHidden(pg)) main.append(hiddenTag());
     const h = hero(pg);
     headingLevel = h ? 'h2' : 'h1';
+    splitCount = 0;
     if (h) main.append(h);
     (pg.sections || []).filter(visible).forEach((s) => {
       const fn = SECTIONS[s.kind];

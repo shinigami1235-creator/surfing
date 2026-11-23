@@ -234,3 +234,5 @@ h1.sec-title{font-size:clamp(42px,6vw,72px)}
 .text .text-body .rich p{font-size:18px;margin:0 0 18px}
 .sub.rich{color:var(--muted)}
 .text-body .sec-title+.rich{margin-top:18px}
+.split.flip .split-img{order:2}
+@media (max-width:760px){.split.flip .split-img{order:0}}

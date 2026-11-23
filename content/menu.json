@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Home",
+    "link": "home",
+    "hidden": false,
+    "children": []
+  },
+  {
+    "label": "Boat Charters",
+    "link": "charters",
+    "hidden": false,
+    "children": []
+  },
+  {
+    "label": "Photos",
+    "link": "photos",
+    "hidden": false,
+    "children": []
+  },
+  {
+    "label": "About",
+    "link": "about",
+    "hidden": false,
+    "children": []
+  },
+  {
+    "label": "Contact",
+    "link": "contact",
+    "hidden": false,
+    "children": []
+  }
+]

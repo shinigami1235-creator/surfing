@@ -1,15 +1,14 @@
 # Pages CMS setup: https://pagescms.org
-# She signs in at app.pagescms.org and sees four sections: Sessions, Films, Prices and Site.
 
 media:
   input: media
   output: media
 
 content:
-  - name: sessions
-    label: Photo sessions
+  - name: photos
+    label: Photos
     type: file
-    path: content/sessions.json
+    path: content/photos.json
     format: json
     list: true
     fields:
@@ -19,19 +18,22 @@ content:
         options:
           format: yyyy-MM-dd
       - name: spot
-        label: Spot
+        label: Location
         type: string
-        required: true
-        description: "Macaronis, Lance's Right, Rifles. Spell it the same each time since the site groups photos by it."
-      - name: shot
-        label: Shot from
-        type: select
-        options:
-          values: [Water, Drone, Land]
-      - name: surfers
-        label: Surfers
+        description: "Type it as it appears under Spots, for example Macaronis."
+      - name: collections
+        label: Collections
         type: string
-        description: Optional. Shown under each photo.
+        list: true
+        description: "One collection per line, spelled as under Collections, for example Surf Sessions."
+      - name: title
+        label: Title
+        type: string
+        description: Optional. Shown on the photo instead of the location.
+      - name: description
+        label: Description
+        type: text
+        description: Optional. Shown under the photo when it is open.
       - name: photos
         label: Photos
         type: image
@@ -45,6 +47,153 @@ content:
         label: Hide from the site
         type: boolean
         description: Tick to check it on the preview link first. Untick to publish.
+
+  - name: collections
+    label: Collections
+    type: file
+    path: content/collections.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: string
+        description: "One line under the cover, for example: Drone shots of surf breaks, islands and boats."
+      - name: cover
+        label: Cover photo
+        type: image
+        description: Leave empty to use the newest photo in the collection.
+      - name: hidden
+        label: Hide from the site
+        type: boolean
+
+  - name: spots
+    label: Spots
+    type: file
+    path: content/spots.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Location
+        type: string
+        required: true
+      - name: area
+        label: Area
+        type: string
+        description: "Shown after the collection on each photo, for example Mentawai Islands or Siberut."
+
+  - name: pages
+    label: Pages
+    type: file
+    path: content/pages.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Page title
+        type: string
+        required: true
+      - name: slug
+        label: Page address
+        type: string
+        description: "Short name used in the menu and the address, for example charters. The front page is home."
+      - name: description
+        label: Google description
+        type: text
+        description: One or two sentences shown in Google results.
+      - name: hero
+        label: Top photo
+        type: image
+        description: Leave empty for a page with no big photo.
+      - name: hero_text
+        label: Line under the title
+        type: string
+      - name: hidden
+        label: Hide from the site
+        type: boolean
+      - name: sections
+        label: Sections
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{kind}: {heading}"
+        fields:
+          - name: kind
+            label: Section type
+            type: select
+            options:
+              values: [Text, Photos and videos, Details, List, Buttons, Enquiry form, Collections, Films, Contact]
+          - name: heading
+            label: Heading
+            type: string
+          - name: text
+            label: Text
+            type: text
+            description: A blank line starts a new paragraph.
+          - name: image
+            label: Image
+            type: image
+            description: Text sections only. Shown beside the text.
+          - name: photos
+            label: Photos
+            type: image
+            description: Photos and videos sections only.
+            options:
+              multiple:
+                max: 100
+              rename: safe
+          - name: videos
+            label: YouTube links
+            type: string
+            list: true
+            description: Photos and videos sections only.
+          - name: items
+            label: Lines
+            type: string
+            list: true
+            description: "Details: Label: value. List: one item per line. Text and Buttons: Button label | page or link, for example Enquire | contact or Message us | whatsapp."
+          - name: hidden
+            label: Hide this section
+            type: boolean
+
+  - name: menu
+    label: Menu
+    type: file
+    path: content/menu.json
+    format: json
+    list: true
+    fields:
+      - name: label
+        label: Label
+        type: string
+        required: true
+      - name: link
+        label: Link
+        type: string
+        description: "A page address such as charters, a full web address, whatsapp or email. Leave empty for a dropdown heading."
+      - name: hidden
+        label: Hide from the menu
+        type: boolean
+      - name: children
+        label: Dropdown items
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: link
+            label: Link
+            type: string
+          - name: hidden
+            label: Hide from the menu
+            type: boolean
 
   - name: videos
     label: Films
@@ -62,7 +211,7 @@ content:
         label: Title
         type: string
       - name: spot
-        label: Spot
+        label: Location
         type: string
       - name: date
         label: Date
@@ -72,26 +221,6 @@ content:
       - name: draft
         label: Hide from the site
         type: boolean
-        description: Tick to check it on the preview link first. Untick to publish.
-
-  - name: packages
-    label: Prices
-    type: file
-    path: content/packages.json
-    format: json
-    list: true
-    fields:
-      - name: name
-        label: Package
-        type: string
-      - name: price
-        label: Price
-        type: string
-        description: "Example: 1,500,000 IDR"
-      - name: details
-        label: Details
-        type: text
-        description: One line per item.
 
   - name: settings
     label: Site
@@ -108,22 +237,10 @@ content:
       - name: location
         label: Location
         type: string
-      - name: hero
-        label: Top photo
-        type: image
-      - name: about_photo
-        label: About photo
-        type: image
-      - name: about
-        label: About
-        type: text
-      - name: booking_note
-        label: Contact note
-        type: text
       - name: whatsapp
         label: WhatsApp number
         type: string
-        description: "Country code and number, no spaces. Example: 6281234567890"
+        description: "Country code and number, no spaces. Example: 60123456789"
       - name: instagram
         label: Instagram handle
         type: string

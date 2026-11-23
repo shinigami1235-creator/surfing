@@ -1,0 +1,203 @@
+[
+  {
+    "title": "Home",
+    "slug": "home",
+    "description": "Surf photos and drone films from the Mentawai Islands.",
+    "hero": "media/WhatsApp Image 2026-11-22 at 10.52.10 PM (11).jpeg",
+    "hero_text": "",
+    "hidden": false,
+    "sections": [
+      {
+        "kind": "Collections",
+        "heading": "The Photo Collection",
+        "text": "Surf, ocean and island photography from the Mentawai Islands.",
+        "image": "",
+        "photos": [],
+        "videos": [],
+        "items": [],
+        "hidden": false
+      },
+      {
+        "kind": "Text",
+        "heading": "Boat Charters",
+        "text": "[Two sentences about the charter: the boat, where it goes and who it suits.]",
+        "image": "https://images.unsplash.com/photo-1594704958523-c90b2af49f87",
+        "photos": [],
+        "videos": [],
+        "items": [
+          "See the charters | charters"
+        ],
+        "hidden": false
+      },
+      {
+        "kind": "Films",
+        "heading": "Films",
+        "text": "",
+        "image": "",
+        "photos": [],
+        "videos": [],
+        "items": [],
+        "hidden": false
+      },
+      {
+        "kind": "Contact",
+        "heading": "Contact",
+        "text": "Send your dates, your boat or camp, and whether you want photos, drone or both.",
+        "image": "",
+        "photos": [],
+        "videos": [],
+        "items": [],
+        "hidden": false
+      }
+    ]
+  },
+  {
+    "title": "Boat Charters",
+    "slug": "charters",
+    "description": "Surf charters around the Mentawai Islands.",
+    "hero": "https://images.unsplash.com/photo-1594704958523-c90b2af49f87",
+    "hero_text": "Surf trips around the Mentawai Islands",
+    "hidden": false,
+    "sections": [
+      {
+        "kind": "Text",
+        "heading": "The boat",
+        "text": "[Two or three sentences about the boat, the crew and the kind of trip it runs.]",
+        "image": "",
+        "photos": [],
+        "videos": [],
+        "items": [],
+        "hidden": false
+      },
+      {
+        "kind": "Details",
+        "heading": "Charter details",
+        "text": "",
+        "image": "",
+        "photos": [],
+        "videos": [],
+        "items": [
+          "Boat: [Name]",
+          "Length: [number] m",
+          "Cabins: [number]",
+          "Guests: Up to [number]",
+          "Crew: [number]",
+          "Departs from: [Padang or Tuapejat]"
+        ],
+        "hidden": false
+      },
+      {
+        "kind": "Photos and videos",
+        "heading": "On board",
+        "text": "",
+        "image": "",
+        "photos": [
+          "https://images.unsplash.com/photo-1720059737088-4c8a1c040ee2",
+          "https://images.unsplash.com/photo-1602913017002-1103927ad734",
+          "https://images.unsplash.com/photo-1541064828014-503911d13103"
+        ],
+        "videos": [
+          "https://www.youtube.com/watch?v=N16MdO8Ww6s"
+        ],
+        "items": [],
+        "hidden": false
+      },
+      {
+        "kind": "List",
+        "heading": "Trip information",
+        "text": "[Trip length, season and which breaks the boat visits.]",
+        "image": "",
+        "photos": [],
+        "videos": [],
+        "items": [
+          "[Meals on board]",
+          "[Surf guide]",
+          "[Drinking water]",
+          "[Photos and drone footage of your sessions]",
+          "[Transfers from Padang]"
+        ],
+        "hidden": false
+      },
+      {
+        "kind": "Enquiry form",
+        "heading": "Enquire about a charter",
+        "text": "Send your dates and group size and we'll reply on WhatsApp or email.",
+        "image": "",
+        "photos": [],
+        "videos": [],
+        "items": [],
+        "hidden": false
+      }
+    ]
+  },
+  {
+    "title": "Photos",
+    "slug": "photos",
+    "description": "Surf, ocean and island photo collections from the Mentawai Islands.",
+    "hero": "",
+    "hero_text": "",
+    "hidden": false,
+    "sections": [
+      {
+        "kind": "Collections",
+        "heading": "The Photo Collection",
+        "text": "Surf, ocean and island photography from the Mentawai Islands.",
+        "image": "",
+        "photos": [],
+        "videos": [],
+        "items": [],
+        "hidden": false
+      }
+    ]
+  },
+  {
+    "title": "About",
+    "slug": "about",
+    "description": "",
+    "hero": "",
+    "hero_text": "",
+    "hidden": false,
+    "sections": [
+      {
+        "kind": "Text",
+        "heading": "About",
+        "text": "Somewhere between chasing waves and exploring the islands, Ricky found another way to experience the ocean — through photography.\n\nFrom perfect barrels and turquoise waters to golden sunsets and the untouched beauty of the Mentawais, his photographs are a reflection of the places, people, and moments that inspire him.\n\nNo two waves are ever the same",
+        "image": "media/IMG_2587 2.jpeg",
+        "photos": [],
+        "videos": [],
+        "items": [],
+        "hidden": false
+      }
+    ]
+  },
+  {
+    "title": "Contact",
+    "slug": "contact",
+    "description": "",
+    "hero": "",
+    "hero_text": "",
+    "hidden": false,
+    "sections": [
+      {
+        "kind": "Contact",
+        "heading": "Contact",
+        "text": "Send your dates, your boat or camp, and whether you want photos, drone or both.",
+        "image": "",
+        "photos": [],
+        "videos": [],
+        "items": [],
+        "hidden": false
+      },
+      {
+        "kind": "Enquiry form",
+        "heading": "Send an enquiry",
+        "text": "",
+        "image": "",
+        "photos": [],
+        "videos": [],
+        "items": [],
+        "hidden": false
+      }
+    ]
+  }
+]

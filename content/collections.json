@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Surf Sessions",
+    "description": "Surfers in action, rides and barrels.",
+    "cover": "",
+    "hidden": false
+  },
+  {
+    "name": "Ocean & Waves",
+    "description": "Breaking waves, barrels and seascapes.",
+    "cover": "",
+    "hidden": false
+  },
+  {
+    "name": "Aerial",
+    "description": "Drone shots of surf breaks, islands, reefs and boats.",
+    "cover": "",
+    "hidden": false
+  },
+  {
+    "name": "Island Life",
+    "description": "Local life, boats, villages and people.",
+    "cover": "",
+    "hidden": false
+  },
+  {
+    "name": "Charters",
+    "description": "Photos from boat trips.",
+    "cover": "",
+    "hidden": false
+  },
+  {
+    "name": "Sky & Light",
+    "description": "Sunrises, sunsets, skies and golden hour.",
+    "cover": "",
+    "hidden": false
+  },
+  {
+    "name": "Nature",
+    "description": "Jungle, beaches and island scenery.",
+    "cover": "",
+    "hidden": false
+  }
+]

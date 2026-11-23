@@ -1,0 +1,112 @@
+[
+  {
+    "date": "2026-09-02",
+    "spot": "Telescopes",
+    "collections": [
+      "Surf Sessions"
+    ],
+    "title": "",
+    "description": "",
+    "photos": [
+      "media/whatsapp-image-2026-11-22-at-105210-pm-7.jpeg",
+      "media/whatsapp-image-2026-11-22-at-105210-pm-13.jpeg"
+    ],
+    "draft": false
+  },
+  {
+    "date": "2026-09-15",
+    "spot": "Bank Vaults",
+    "collections": [
+      "Surf Sessions",
+      "Ocean & Waves"
+    ],
+    "title": "",
+    "description": "",
+    "photos": [
+      "media/whatsapp-image-2026-11-22-at-105209-pm-7.jpeg"
+    ],
+    "draft": false
+  },
+  {
+    "date": "2026-09-28",
+    "spot": "Playgrounds",
+    "collections": [
+      "Surf Sessions"
+    ],
+    "title": "",
+    "description": "",
+    "photos": [
+      "media/whatsapp-image-2026-11-22-at-105210-pm-5.jpeg"
+    ],
+    "draft": false
+  },
+  {
+    "date": "2026-10-12",
+    "spot": "Kandui Left",
+    "collections": [
+      "Aerial"
+    ],
+    "title": "",
+    "description": "",
+    "photos": [
+      "media/whatsapp-image-2026-11-22-at-105209-pm-5.jpeg"
+    ],
+    "draft": false
+  },
+  {
+    "date": "2026-10-21",
+    "spot": "Rifles",
+    "collections": [
+      "Surf Sessions",
+      "Ocean & Waves"
+    ],
+    "title": "",
+    "description": "",
+    "photos": [
+      "media/whatsapp-image-2026-11-22-at-105210-pm-14.jpeg"
+    ],
+    "draft": false
+  },
+  {
+    "date": "2026-10-30",
+    "spot": "Lance's Right",
+    "collections": [
+      "Aerial"
+    ],
+    "title": "",
+    "description": "",
+    "photos": [
+      "media/whatsapp-image-2026-11-22-at-105209-pm-5-1.jpeg"
+    ],
+    "draft": false
+  },
+  {
+    "date": "2026-11-08",
+    "spot": "Macaronis",
+    "collections": [
+      "Surf Sessions",
+      "Ocean & Waves"
+    ],
+    "title": "",
+    "description": "",
+    "photos": [
+      "media/whatsapp-image-2026-11-22-at-105210-pm.jpeg"
+    ],
+    "draft": false
+  },
+  {
+    "date": "2026-11-01",
+    "spot": "Playgrounds",
+    "collections": [
+      "Charters"
+    ],
+    "title": "",
+    "description": "",
+    "photos": [
+      "https://images.unsplash.com/photo-1720059737088-4c8a1c040ee2",
+      "https://images.unsplash.com/photo-1602913017002-1103927ad734",
+      "https://images.unsplash.com/photo-1594704958523-c90b2af49f87"
+    ],
+    "draft": false
+  }
+]

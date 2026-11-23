@@ -15,7 +15,7 @@
       {
         "kind": "Text",
         "heading": "Boat Charters",
-        "text": "<p>[Two sentences about the charter: the boat, where it goes and who it suits.]</p>",
+        "text": "Surf boat trips in the Mentawai Islands - Indonesia",
         "items": [
           "See the charters | charters"
         ],
@@ -24,7 +24,7 @@
       {
         "kind": "Films",
         "heading": "Films",
-        "hidden": false
+        "hidden": true
       },
       {
         "kind": "Contact",
